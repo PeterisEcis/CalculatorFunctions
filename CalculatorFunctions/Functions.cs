@@ -16,15 +16,12 @@
         }
         public static double? Divide(double num1, double num2)
         {
-            //Now this function will return null if num2 is 0 and throws error
-            try
-            {
-                return num1 / num2;
-            }
-            catch
+            //Now this function will return null if num2 is 0
+            if (num2 == 0)
             {
                 return null;
             }
+            return num1 / num2;
         }
     }
 }
